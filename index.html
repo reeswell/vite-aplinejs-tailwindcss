@@ -7,21 +7,12 @@
     <title>Starter App</title>
   </head>
   <body>
-    <div x-data="{msg: 'hello world'}">
-      <h1 
-        class="mt-6 text-6xl text-center text-green-600"
-        x-text="msg"
-        @click="changeMsg"
-      ></h1>
+    <div x-data="getData()" class="m-10 text-center">
+
+      <button @click="fetchImg" class="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-700" >点我</button>
+      <img x-show="show"  :src="imgSrc" alt="dog">
     </div>
     <script type="module" src="/main.js"></script>
-    <script>
-    // import axios from 'axios'
 
-      function changeMsg() {
-        this.msg = 'hello world 2';
-      }
-
-    </script>
   </body>
 </html>

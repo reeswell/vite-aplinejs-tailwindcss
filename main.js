@@ -1,10 +1,25 @@
 import './styles/index.scss'
-import Alpine from "alpinejs";
-// import axios from 'axios'
-window.Alpine = Alpine;
-// window.axios = axios;
-Alpine.start();
-      // axios 测试接口
-      // axios.get('https://api.apishop.net/common/news/getNews').then(res => {
-      //   console.log(res.data);
-      // });
+import Alpine from 'alpinejs'
+import axios from 'axios'
+window.Alpine = Alpine
+
+window.getData = () => {
+  return {
+    msg: 'Hello World',
+    show: false,
+    imgSrc: '',
+    async fetchImg(e) {
+      e.preventDefault()
+      try {
+        const res = await axios.get('https://dog.ceo/api/breeds/image/random')
+        this.imgSrc = res.data.message
+        this.show = true
+      }
+      catch (error) {
+        console.error(error)
+      }
+    },
+  }
+}
+
+Alpine.start()
