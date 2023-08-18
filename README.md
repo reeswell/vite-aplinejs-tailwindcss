@@ -1,1 +1,1 @@
-# Vite+Alpinejs+Tailwindcss 快速开发静态页面
+# Vite+Alpinejs+Tailwindcss 快速开发活动页

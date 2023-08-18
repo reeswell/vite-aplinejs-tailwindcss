@@ -7,4 +7,5 @@
     "*.css": "postcss"
   },
   "editor.formatOnSave": false
+  // "liveServer.settings.root": "/dist"
 }

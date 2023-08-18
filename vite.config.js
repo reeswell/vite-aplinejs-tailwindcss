@@ -2,6 +2,7 @@ export default {
   server: {
     host: true,
     port: 8090,
+    // base: './',
     // proxy: {
     //     // with options
     //     '/api': {

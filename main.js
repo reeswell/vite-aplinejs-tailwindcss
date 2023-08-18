@@ -1,7 +1,7 @@
-import './styles/index.scss'
-import Alpine from 'alpinejs'
-import axios from 'axios'
-window.Alpine = Alpine
+import './styles/index.scss';
+import Alpine from 'alpinejs';
+import axios from 'axios';
+window.Alpine = Alpine;
 
 window.getData = () => {
   return {
@@ -9,17 +9,16 @@ window.getData = () => {
     show: false,
     imgSrc: '',
     async fetchImg(e) {
-      e.preventDefault()
+      e.preventDefault();
       try {
-        const res = await axios.get('https://dog.ceo/api/breeds/image/random')
-        this.imgSrc = res.data.message
-        this.show = true
-      }
-      catch (error) {
-        console.error(error)
+        const res = await axios.get('https://dog.ceo/api/breeds/image/random');
+        this.imgSrc = res.data.message;
+        this.show = true;
+      } catch (error) {
+        console.error(error);
       }
     },
-  }
-}
+  };
+};
 
-Alpine.start()
+Alpine.start();
