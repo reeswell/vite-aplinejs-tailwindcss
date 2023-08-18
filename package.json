@@ -18,15 +18,8 @@
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.9"
   },
-  "lint-staged": {
-    "*": "eslint --fix"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged"
-  },
   "devDependencies": {
     "eslint": "^8.47.0",
-    "sass": "^1.66.0",
-    "simple-git-hooks": "^2.9.0"
+    "sass": "^1.66.0"
   }
 }
