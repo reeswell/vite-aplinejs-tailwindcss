@@ -4,7 +4,6 @@ export default {
     port: 8090,
     // base: './',
     // proxy: {
-    //     // with options
     //     '/api': {
     //       target: 'https://dog.ceo',
     //       changeOrigin: true,
