@@ -8,7 +8,7 @@
 - 尊贵铂金： 使用Live Sever + Watch Sass 还是不太爽。特别需要引入第三方库的时候缺少按需打包环节有点臃肿。
 - 最强王者：使用 Vite+Alpinejs+Tailwindcss 的方式开发一个活动页面，轻松搞定。Vite负责打包,Alpinejs负责操作DOM交互, Tailwindcss负责样式。打包出来是一个js文件、一个css文件和一个html文件非常完美。
 
-## Install
+## 安装
 
 ```shell
 git clone https://github.com/xxydrr/vite-aplinejs-tailwindcss.git
@@ -16,13 +16,13 @@ cd vite-aplinejs-tailwindcss
 pnpm i
 ```
 
-## Start development
+## 开发
 
 ```shell
 pnpm dev
 ```
 
-## Simple build for production
+## 生产
 
 ```shell
 pnpm build
